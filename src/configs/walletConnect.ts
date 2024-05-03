@@ -39,7 +39,7 @@ export const createWalletConnectModal = () => {
         enableInjected: true, // true by default
         enableCoinbase: true, // true by default
         rpcUrl: '...', // used for the Coinbase SDK
-        defaultChainId: 1, // used for the Coinbase SDK
+        defaultChainId: 761412, // used for the Coinbase SDK
     });
 
     // 5. Create a Web3Modal instance
