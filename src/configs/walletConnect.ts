@@ -13,6 +13,14 @@ export const createWalletConnectModal = () => {
         rpcUrl: 'https://cloudflare-eth.com',
     };
 
+    const miexs_config = {
+        chainId: 761412,
+        name: 'Miexs Smartchain',
+        currency: 'MIX',
+        explorerUrl: 'https://miexs.comm',
+        rpcUrl: 'https://mainnet-rpc.miexs.comm',
+    };
+
     // 3. Create a metadata object
     const metadata = {
         name: 'TMA Proof of Concept',
@@ -37,7 +45,7 @@ export const createWalletConnectModal = () => {
     // 5. Create a Web3Modal instance
     createWeb3Modal({
         ethersConfig,
-        chains: [mainnet_config],
+        chains: [mainnet_config, miexs_config],
         projectId,
         enableAnalytics: true, // Optional - defaults to your Cloud configuration
     });
